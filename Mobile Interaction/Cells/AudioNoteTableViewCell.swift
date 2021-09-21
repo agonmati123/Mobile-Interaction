@@ -11,7 +11,7 @@ class AudioNoteTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var dateCreated: UILabel!
     @IBOutlet weak var dateModified: UILabel!
-    var delegate: CellStyleChanged?
+    weak var delegate: CellStyleChanged?
 
     var viewModel: AudioNote? {
         didSet {
